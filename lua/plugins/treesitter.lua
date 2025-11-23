@@ -36,10 +36,10 @@ return {
                     "bash",
                     "lua",
                     "c",
-                    "gitignore",
-		    "vim",
-		    "vimdoc",
-		    "markdown",
+                    "gitignore"
+		    "vim"
+		    "vimdoc"
+		    "markdown"
 		    "markdown_inline"
                 },
                 -- auto install above language parsers

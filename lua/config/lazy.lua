@@ -15,12 +15,10 @@ if not (vim.loop or vim.uv).fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
--- Setup lazy.nvim with plugins
 require("lazy").setup({
   spec = {
     { import = "plugins" },
 
-    -- Treesitter for syntax highlighting
     {
       "nvim-treesitter/nvim-treesitter",
       build = ":TSUpdate",
@@ -34,7 +32,6 @@ require("lazy").setup({
 
     change_detection = { notify = false },
 
-    -- Disable hererocks if you don’t use LuaRocks
     rocks = { hererocks = false },
   }
 })

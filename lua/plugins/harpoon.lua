@@ -1,8 +1,6 @@
 local conf = require('telescope.config').values
 local themes = require('telescope.themes')
 
--- helper function to use telescope on harpoon list.
--- change get_ivy to other themes if wanted
 local function toggle_telescope(harpoon_files)
     local file_paths = {}
     for _, item in ipairs(harpoon_files.items) do
@@ -26,7 +24,7 @@ return {
     branch = "harpoon2",
     dependencies = {
         "nvim-lua/plenary.nvim"
-    },
+    }
     config = function()
         local harpoon = require('harpoon')
         vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
