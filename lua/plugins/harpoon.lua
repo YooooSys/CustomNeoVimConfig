@@ -24,7 +24,7 @@ return {
     branch = "harpoon2",
     dependencies = {
         "nvim-lua/plenary.nvim"
-    }
+    },
     config = function()
         local harpoon = require('harpoon')
         vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
