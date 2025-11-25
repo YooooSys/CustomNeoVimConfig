@@ -28,12 +28,6 @@ return {
       on_attach = on_attach,
     })
 
-    lspconfig.omnisharp.setup({
-    cmd = { "/home/Yoooo/.dotnet/tools/omnisharp" }, -- explicit path
-    capabilities = capabilities,
-    on_attach = function(client, bufnr)
-        vim.bo[bufnr].omnifunc = "v:lua.vim.lsp.omnifunc"
-    end,
-})
+
  end,
 }
